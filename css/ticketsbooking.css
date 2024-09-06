@@ -1,0 +1,193 @@
+/* Reset default margin and padding */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+body, h1, h2, h3, p, input, select, button {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:'Poppins', sans-serif;
+    background-color: darkslategrey;
+    background-image: url('background3.jpg');
+   
+    
+}
+
+/* Header styles */
+header {
+    background-image: url('header-background.jpg'); /* Replace with your header background image */
+    background-color: #000000dd;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 1%;
+    text-align: center;
+    font-size: 1.5em;
+    color: #ffffffc6;
+    
+}
+
+/* Navigation styles */
+nav {
+    background-color: #b69202b1;
+    padding: 1em;
+    text-align: center;
+    color: rgb(210, 34, 34);
+    font-size: larger;
+    backdrop-filter: blur(5px);
+}
+
+nav a {
+    margin: 0 50px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a.active {
+    text-decoration: underline;
+    font-weight: bold;
+   
+}
+
+/* Booking card styles */
+.booking-card {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.036);
+    box-shadow: 0 0 10px rgba(19, 19, 19, 0.866);
+    border-radius: 10px;
+    backdrop-filter:blur(15px);
+    
+}
+
+/* Booking section styles */
+.booking-section {
+    padding: 30px;
+    color:black;
+    text-align: center;
+}
+
+/* Footer styles */
+footer {
+    background-color: #000000f8;
+    color: #fff;
+    text-align: center;
+    padding: 0em;
+    position: static;
+    width: 100%;
+    bottom: 10;
+}
+.seating-map {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr); /* Adjust the number of columns as needed */
+    gap: 10px; /* Adjust the gap between seats */
+    margin-top: 20px;
+}
+
+.seat {
+    width: 30px;
+    height: 30px;
+    background-color: #f8d808f0; /* Default seat color */
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    border-radius: 15%;
+}
+
+/* Highlight selected seat */
+.seat.selected {
+    background-color:#ffffff; /* Highlight color */
+    color:black;
+    
+}
+.booking-card input[type="text"],
+.booking-card input[type="date"] {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+nav a.active{
+    text-decoration:none;
+    font-weight: bold;
+    color:red;
+}
+h2{
+    font-size:50px;
+    color: #000000;
+    font-family:'Poppins', sans-serif;
+}
+label{
+    font-size: larger;
+    font-family:'Poppins', sans-serif;
+}
+button{
+    padding: 10px 20px;
+    margin: 0 20px;
+    font-size: 16px;
+    background-color:darkcyan;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    
+}
+.booking-card button:hover{
+    background-color: darkturquoise;
+}
+/* Add this CSS for slideshow styling */
+.slideshow-container {
+    max-width: 1000px;
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Set a negative z-index to place it behind other elements */
+}
+
+.booking-section {
+    position: relative;
+    z-index: 1; /* Set a positive z-index to place it above the slideshow */
+    padding: 30px;
+    color: #0c0c0c;
+    text-align: center;
+    font-weight: 900;
+}
+h3{
+    font-size:25px;
+    color: #000000;  
+
+    font-family:'Poppins', sans-serif;
+    
+}

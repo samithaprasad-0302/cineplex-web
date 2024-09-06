@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('background2.jpg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+header {
+    background-color: #33333300;
+    padding:0.6%;
+    text-align: center;
+    font-size: 1.5em;
+   /* / animation: runText 18s linear infinite; Add the runText animation */
+}
+
+@keyframes runText {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+nav {
+    background-color: #b6920200;
+    padding: 1em;
+    text-align: center;
+    color: rgb(210, 34, 34);
+    font-size: larger;
+}
+
+nav a {
+    margin: 0 50px;
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 30px;
+    color: #f2f1ee;
+}
+
+h2 {
+    font-size: 30px;
+    color:#ff9800;
+    animation: slideIn 1s ease-out; /* Add the slideIn animation */
+    text-align: center;
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.locations {
+    padding: 20px;
+}
+
+.location-card {
+    margin-bottom: 10px;
+    margin-left: 35%;
+    background-color: rgba(255, 255, 255, 0.392);
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width:30% ;
+    backdrop-filter:blur(15px);
+    
+}
+
+.location-card img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.location-info h3 {
+    font-size: 35px;
+    color: #000000;
+}
+
+.location-info p {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position: static;
+    width: 100%;
+    bottom: 0;
+}
+nav a.active{
+    text-decoration:none;
+    font-weight: bold;
+    color: rgb(248, 0, 0);
+}
+p{
+    text-align: center;
+}
+h3{
+    font-family: 'Poppins', sans-serif;
+}

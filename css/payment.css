@@ -1,0 +1,96 @@
+/* payment.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: url('background2.jpg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+header {
+    background-color: #33333300;
+    padding: 0.6%;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+nav {
+    background-color: #b6920200;
+    padding: 1em;
+    text-align: center;
+    color: rgb(210, 34, 34);
+    font-size: larger;
+}
+
+nav a {
+    margin: 0 50px;
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+nav a.active {
+    text-decoration:none;
+    font-weight: bold;
+    color: rgb(248, 0, 0);
+    
+}
+.payment-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.payment-card {
+    width: 300px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 3cm;
+    backdrop-filter: blur(5px);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 1px; 
+}

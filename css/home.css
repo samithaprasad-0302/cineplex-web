@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('background1.jpg'); /* Replace 'background.jpg' with your image file */
+    background-size:102%;
+    background-color:#d6d5d2;
+
+    background-position: top;
+    background-repeat: no-repeat;
+    color: #ffffff; /* Set text color to contrast with the background */
+}
+
+header {
+    background-image: url('header-background.jpg'); /* Replace 'header-background.jpg' with your image file */
+    background-size: cover;
+    z-index: 1000;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #33333383;
+    padding: 1%;
+    text-align: center;
+    font-size: 1.5em;
+    /* animation: runText 18s linear infinite; Add the runText animation */
+}
+
+@keyframes runText {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+nav {
+    background-color:transparent;
+    padding: 1em;
+    text-align: center;
+    color: rgb(210, 34, 34);
+    font-size: larger;
+}
+
+nav a {
+    margin: 0 50px; /* Adjust the margin as needed to increase or decrease the spacing */
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+
+
+section {
+    padding: 30px;
+    color: #f2f1ee;
+}
+
+.now-showing {
+    padding: 20px;
+}
+
+h2 {
+    font-size: 30px;
+    color: #edc525;
+    animation: slideIn 1s ease-out; /* Add the slideIn animation */
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+    
+
+
+.movie-card h3 {
+    font-size: 30px; /* Adjust the font size for movie titles */
+}
+
+.movie-card p {
+    font-size: 15px; /* Adjust the font size for movie details */
+}
+
+.movie-listing {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.movie-card {
+    width: 300px;
+    margin: 10px; /* Adjust margin to provide proper spacing between movie cards */
+    padding: 10px;
+    background-color: rgba(113, 117, 117, 0); /* Add background color with some opacity for readability */
+    box-shadow: 0 4px 8px rgba(114, 117, 117, 0);
+    text-align: center;
+    animation: fadeInUp 1s ease-out; /* Add the fadeInUp animation */
+    overflow-x:auto;
+}
+.movie-card:hover {
+    transform: scale(1.1); /* Adjust the scale factor as needed */
+    transition: transform 0.3s ease; /* Adjust the transition duration and easing as needed */
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.login-signup-buttons {
+    text-align:right;
+    margin-top: 0px;
+    
+}
+
+.login-signup-buttons button {
+    padding: 10px 20px;
+    margin: 0 20px;
+    font-size: 16px;
+    background-color:darkcyan;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.login-signup-buttons button:hover {
+    background-color:darkturquoise;
+}
+
+/* Styles for Upcoming Movies */
+.upcoming-movies {
+    padding: 50px;
+    display:flex;
+}
+.upcoming-movies .movie-listing {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.upcoming-movies h2 {
+    font-size: 30px;
+    color: #997c0b;
+    
+}
+
+.upcoming-movie-card {
+    width: 30%;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.088);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+    text-align:center;
+    color: #b69202;
+    animation: fadeInUp 1s ease-out; /* Add the fadeInUp animation */
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+.upcoming-movie-card img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    color: #b69202;
+    
+}
+
+.upcoming-movie-card h3 {
+    font-size: 30px;
+    color: #b69202;
+}
+
+.upcoming-movie-card p {
+    font-size: 15px;
+    color: #b69202;
+}
+
+footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position:static;
+    width: 100%;
+    bottom: 0;
+    padding:0%;
+}
+p{
+    text-align: center;
+    font-size: large;
+}
+h5{
+    color: black;
+    font-size: medium;
+}
+p1{
+    color: black;
+    font-size: small;
+}
+.upcoming-movie-card{
+    color: #555;
+
+}
+.search-bar {
+    margin-top: 2px;
+    text-align: center;
+}
+
+.search-bar input {
+    padding: 8px;
+    margin-right: 5px;
+    width: 60%;
+    box-sizing: border-box;
+}
+
+.search-bar button {
+    padding: 8px;
+    background-color:#825d04;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.search-bar button:hover {
+    background-color: #b69202;
+}
+nav a.active{
+    text-decoration:none;
+    font-weight: bold;
+    color: rgb(255, 0, 0);
+}
+.movie-card button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color:darkcyan;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-family:'Poppins', sans-serif;
+    border-radius: 5px;
+}
+
+.movie-card button:hover {
+    background-color:darkturquoise;
+}

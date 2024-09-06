@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Tickets - Cineplex Movie Theatre</title>
+    <link rel="stylesheet" href="ticketsbooking.css">
+    <script src="ticketsbooking.js" defer></script>
+    <script src="navigation.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1><img src="png.png"width="90" height="80">Cineplex Movie Theatre</h1>
+    </header>
+
+
+    <nav>
+        <a href="home.html">Home</a> |
+        <a href="movies.html">Movies</a> |
+        <a href="ticketsbooking.html" class="active">Book Tickets</a> <!-- Highlight the active page -->
+    </nav>
+   <!-- Add this div to your HTML body section -->
+<div class="slideshow-container">
+    <!-- Movie Posters -->
+    <div class="mySlides">
+        <img src="b1.jpg"alt="Movie 1 Poster">
+    </div>
+    <div class="mySlides">
+        <img src="b2.jpg" alt="Movie 2 Poster">
+    </div>
+    <!-- <div class="mySlides">
+        <img src="b3.jpg" alt="Movie 3 Poster">
+    </div> -->
+    <div class="mySlides">
+        <img src="slide4.jpg" alt="Movie 4 Poster">
+    </div>
+    <!-- Add more slides for other movie posters -->
+</div>
+
+    <section class="booking-section">
+        <div class="booking-card">
+            <h2>Book Tickets</h2><br><br>
+            <form id="bookingForm">
+                <label for="movie">Select Movie:</label>
+                <select id="movie" name="movie" required>
+                    <option value="my_fault">MY FAULT</option>
+                    <option value="oppenheimer">OPPENHEIMER</option>
+                    <option value="sonic">SONIC</option>
+                    <option value="tenet">TENET</option>
+                    <option value="captain_miller">CAPTAIN MILLER</option>
+                    <option value="vikram">VIKRAM</option>
+                    <option value="john_wick">JOHN WICK</option>
+                    <option value="the_beekeeper">THE BEEKEEPER</option>
+                    <!-- Add more movie options as needed -->
+                </select><br><br>
+
+                <label for="showtime">Select Showtime:</label>
+                <select id="showtime" name="showtime" required>
+                    <option value="12pm">12:00 PM</option>
+                    <option value="3pm">1:00 PM</option>
+                    <option value="3pm">4:00 PM</option>
+                    <option value="3pm">7:00 PM</option>
+                    <option value="3pm">9:00 PM</option>
+                    <option value="3pm">10:00 PM</option>
+                   
+                    <!-- Add more showtime options as needed -->
+                </select><br><br>
+
+                <label for="seats">Number of Tickets:</label>
+                <input type="number" id="seats" name="seats" min="1" required><br><br>
+                <!-- Seating map -->
+                <!-- Inside the booking form -->
+                
+<label for="name">Name:</label>
+<input type="text" id="name" name="name" placeholder="Enter your name here" required><br><br>
+
+<label for="nic">NIC:</label>
+<input type="text" id="nic" name="nic"  placeholder="Enter your NIC number" required><br><br>
+
+<label for="date">Select Date:</label>
+<input type="date" id="date" name="date" required><br><br>
+
+                <h3>Seating Map</h3>
+                <div class="seating-map">
+                    <!-- Add your seating map layout here -->
+                    <!-- For example, you can use div elements to represent seats -->
+                    <div class="seat"onclick="selectSeat(this)">1</div>
+                    <div class="seat"onclick="selectSeat(this)">2</div>
+                    <div class="seat"onclick="selectSeat(this)">3</div>
+                    <div class="seat"onclick="selectSeat(this)">4</div>
+                    <div class="seat"onclick="selectSeat(this)">5</div>
+                    <div class="seat"onclick="selectSeat(this)">6</div>
+                    <div class="seat"onclick="selectSeat(this)">7</div>
+                    <div class="seat"onclick="selectSeat(this)">8</div>
+                    <div class="seat"onclick="selectSeat(this)">9</div>
+                    <div class="seat"onclick="selectSeat(this)">10</div>
+                    <div class="seat"onclick="selectSeat(this)">11</div>
+                    <div class="seat"onclick="selectSeat(this)">12</div>
+                    <div class="seat"onclick="selectSeat(this)">13</div>
+                    <div class="seat"onclick="selectSeat(this)">14</div>
+                    <div class="seat"onclick="selectSeat(this)">15</div>
+                    <div class="seat"onclick="selectSeat(this)">16</div>
+                    <div class="seat"onclick="selectSeat(this)">17</div>
+                    <div class="seat"onclick="selectSeat(this)">18</div>
+                    <div class="seat"onclick="selectSeat(this)">19</div>
+                    <div class="seat"onclick="selectSeat(this)">20</div>
+                    <div class="seat"onclick="selectSeat(this)">21</div>
+                    <div class="seat"onclick="selectSeat(this)">22</div>
+                    <div class="seat"onclick="selectSeat(this)">23</div>
+                    <div class="seat"onclick="selectSeat(this)">24</div>
+                    <div class="seat"onclick="selectSeat(this)">25</div>
+                    <div class="seat"onclick="selectSeat(this)">26</div>
+                    <div class="seat"onclick="selectSeat(this)">27</div>
+                    <div class="seat"onclick="selectSeat(this)">28</div>
+                    <div class="seat"onclick="selectSeat(this)">29</div>
+                    <div class="seat"onclick="selectSeat(this)">30</div>
+                    <div class="seat"onclick="selectSeat(this)">31</div>
+                    <div class="seat"onclick="selectSeat(this)">32</div>
+                    <div class="seat"onclick="selectSeat(this)">33</div>
+                    <div class="seat"onclick="selectSeat(this)">34</div>
+                    <div class="seat"onclick="selectSeat(this)">35</div>
+                    <div class="seat"onclick="selectSeat(this)">36</div>
+                    <div class="seat"onclick="selectSeat(this)">37</div>
+                    <div class="seat"onclick="selectSeat(this)">38</div>
+                    <div class="seat"onclick="selectSeat(this)">39</div>
+                    <div class="seat"onclick="selectSeat(this)">40</div>
+                    <div class="seat"onclick="selectSeat(this)">41</div>
+                    <div class="seat"onclick="selectSeat(this)">42</div>
+                    <div class="seat"onclick="selectSeat(this)">43</div>
+                    <div class="seat"onclick="selectSeat(this)">44</div>
+                    <div class="seat"onclick="selectSeat(this)">45</div>
+                    <div class="seat"onclick="selectSeat(this)">46</div>
+                    <div class="seat"onclick="selectSeat(this)">47</div>
+                    <div class="seat"onclick="selectSeat(this)">48</div>
+                    <div class="seat"onclick="selectSeat(this)">49</div>
+                    <div class="seat"onclick="selectSeat(this)">50</div>
+                    
+                    <!-- Add more seats as needed -->
+                </div><br>  
+                <h3>Total Amount: <span id="totalAmount">0</span> LKR</h3>            
+
+                <button type="button" onclick="bookTickets()">Book Tickets</button>
+                <button type="button" onclick="clearForm()">Clear</button>
+            </form>
+        </div>
+    </section>
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <!-- Login form fields (username and password) -->
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+    
+                <button type="button" onclick="login()">Login</button>
+            </form>
+            <p>Not registered? <a href="signup.html">Sign up here</a></p>
+        </div>
+    </div>
+   
+
+
+    <footer>
+        <div class="footer-details">
+            <p>&copy; 2024 Cineplex Movie Theatre. All rights reserved.</p>
+            <p>Address: 456 Film Street, Kandy, Sri Lanka</p>
+            <p>Phone: (+94) 71-2345678</p>
+            <p>Email: info@cineplex.lk</p>
+            <p>Follow us on: <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a></p>
+        </div>
+    </footer>
+
+     <!-- Reference the JavaScript file -->
+</body>
+</html>

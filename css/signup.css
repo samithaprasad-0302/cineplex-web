@@ -1,0 +1,105 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, p, input, select, button {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('background3.jpg'); /* Replace 'background.jpg' with your image file */
+    background-size:101%;
+
+    background-position:25%;
+    background-repeat: no-repeat;
+    color: #fff; /* Set text color to contrast with the background */
+}
+
+/* Header styles */
+header {
+    background-image: url('header-background.jpg'); /* Replace with your header background image */
+    background-color: #333;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 1%;
+    text-align: center;
+    font-size: 1.5em;
+    color:#ffffff;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #b69202;
+    padding: 1em;
+    text-align:center;
+    color: rgb(210, 34, 34);
+}
+
+nav a {
+    margin: 0 50px;
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+nav a.active {
+    text-decoration: underline;
+    font-weight: bold;
+    
+}
+
+/* Signup card styles */
+.signup-card {
+    max-width: 400px;
+    margin:auto;
+    padding: 50px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(4px);
+    background-color: #ffffff0f;
+}
+
+/* Signup section styles */
+.signup-section {
+    padding: 30px;
+    color:#f9da5c;
+    text-align:center;
+    text-decoration: dotted;
+    font-size: larger;
+    border-radius: 5px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position:static;
+    width: 100%;
+    bottom: -100px;
+}
+button{
+    padding: 10px 20px;
+    margin: 0 20px;
+    font-size: 16px;
+    background-color:#b69202;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+nav a.active{
+    text-decoration:none;
+    font-weight: bold;
+    color: black;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}

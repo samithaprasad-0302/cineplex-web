@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Cineplex Movie Theatre</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="navigation.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1><img src="png.png" width="90" height="80">Cineplex Movie Theatre</h1>
+    </header>
+
+    <nav>
+        <a href="home.html">Home</a> |
+        <a href="login.html" class="active">Login</a> <!-- Highlight the active page -->
+    </nav>
+
+    <section class="login-section">
+        <div class="login-card">
+            <h2>Login</h2><br><br>
+            <form id="loginForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required><br><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br><br>
+
+                <button type="button" onclick="login()">Login</button>
+                <button type="button" onclick="clearLoginForm()">Clear</button><br><br>
+                <p class="signup-link">Don't have an account? <a href="signup.html">Sign up here</a></p>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-details">
+            <p>&copy; 2024 Cineplex Movie Theatre. All rights reserved.</p>
+            <p>Address: 456 Film Street, Kandy, Sri Lanka</p>
+            <p>Phone: (+94) 71-2345678</p>
+            <p>Email: info@cineplex.lk</p>
+            <p>Follow us on: <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a></p>
+        </div>
+    </footer>
+
+    <script src="login.js" defer></script> <!-- Reference the JavaScript file -->
+</body>
+</html>

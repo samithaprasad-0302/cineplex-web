@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('background2.jpg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+header {
+    background-color: #33333300;
+    padding: 0.6%;
+    text-align: center;
+    font-size: 1.5em;
+    /* animation: runText 20s linear infinite; Add the runText animation */
+}
+
+@keyframes runText {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+nav {
+    background-color: #b6920200;
+    padding: 1em;
+    text-align: center;
+    color: rgb(210, 34, 34);
+    font-size: larger;
+}
+
+nav a {
+    margin: 0 50px;
+    color: #fff;
+   text-decoration: none;
+}
+
+section {
+    padding: 30px;
+    color: #f2f1ee;
+}
+
+h2 {
+    font-size: 30px;
+    text-align:left;
+    margin-left: 15px;
+    color: #edc525;
+    animation: slideIn 1s ease-out; /* Add the slideIn animation */
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+}
+
+.movie-listing {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.movie-card {
+    width: 200px;
+    margin: 10px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.192);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.262);
+    text-align: center;
+    border-radius: 10px;
+    animation: fadeInUp 1s ease-out; /* Add the fadeInUp animation */
+}
+.movie-card:hover {
+    transform: scale(1.1); /* Adjust the scale factor as needed */
+    transition: transform 0.3s ease; /* Adjust the transition duration and easing as needed */
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.movie-card h3 {
+    font-size: 20px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style:inherit;
+    color:rgb(255, 255, 255);
+}
+
+.movie-card p {
+    font-size: 15px;
+}
+
+.movie-card button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color:#000000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-family:'Poppins', sans-serif;
+    border-radius: 5px;
+}
+
+.movie-card button:hover {
+    background-color:#b69202;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position: static;
+    width: 100%;
+    bottom: 0;
+}
+.search-bar {
+    margin-top: 10px;
+    text-align:center;
+}
+
+.search-bar input {
+    padding: 8px;
+    margin-right: 5px;
+    width: 60%;
+    box-sizing: border-box;
+}
+
+.search-bar button {
+    padding: 8px;
+    background-color: #b69202;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+}
+
+.search-bar button:hover {
+    background-color: #825d04;
+}
+nav a.active{
+    text-decoration:none;
+    font-weight: bold;
+    color:#ff0000;
+    
+    
+}
+.login-signup-buttons {
+    text-align:right;
+    margin-top: 0px;
+    font-family:'Poppins', sans-serif; 
+    border-radius: 5px;
+}
+
+.login-signup-buttons button {
+    padding: 10px 20px;
+    margin: 0 20px;
+    font-size: 16px;
+    background-color:darkcyan;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.login-signup-buttons button:hover {
+    background-color:darkturquoise;
+}

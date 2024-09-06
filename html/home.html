@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cineplex Movie Theatre</title>
+    <link rel="stylesheet" href="home.css">
+    <script src="navigation.js" defer></script>
+    <script src="home.js" defer></script>
+
+</head>
+<body>
+    <header>
+         <h1><img src="png.png"width="90" height="80">  Cineplex Movie Theatre</h1>
+         
+    </header>
+    
+    
+    <nav>
+        <a href="home.html">Home</a> |
+        <a href="movies.html">Movies</a> |
+        <a href="specialpromotions.html">Special Promotions</a>|
+        <a href="locations.html">About us</a> |
+        <a href="contact.html">contact us</a> |
+        
+        
+    </nav>
+
+    <section>
+        <div class="search-bar">
+            <form id="searchForm">
+                <input type="text" id="searchInput" placeholder="Search for movies...">
+                <button type="button" onclick="searchMovies()">Search</button>
+            </form>
+        </div>
+        <div class="login-signup-buttons">
+            <button onclick="location.href='login.html'">Login</button>
+            <button onclick="location.href='signup.html'">signup</button>
+        </div>
+        
+        <div id="searchResults" class="movie-listing">
+            <!-- Movie Cards will go here after searching -->
+        </div>
+        <h2>Now Showing</h2>
+        
+        <div class="movie-listing">
+            <!-- Movie Cards will go here -->
+            <div class="movie-card">
+                
+                    <img src="img1.jpg" alt="Upcoming Movie 1">
+                <h3>My Fault</h3>
+                <p>Showtimes: 12:00 PM, 3:00 PM, 6:00 PM</p>
+                <a href="ticketsbooking.html"><button>Book Tickets</button></a>
+            </div>
+            <div class="movie-card">
+                <img src="img2.jpg" alt="Movie 2">
+                <h3>Oppenheimer</h3>
+                <p>Showtimes: 1:00 PM, 4:00 PM, 7:00 PM</p>
+               <a href="ticketsbooking.html"> <button>Book Tickets</button></a>
+                 </div>
+                 <div class="movie-card">
+                    <img src="img10.jpg" alt="Movie 2">
+                    <h3>Tenet</h3>
+                    <p>Showtimes: 1:00 PM, 4:00 PM, 7:00 PM</p>
+                    <a href="ticketsbooking.html"><button>Book Tickets</button></a>
+                     </div>
+            <!-- Add more movie cards as needed -->
+            
+        </div>
+    </section>
+    <section class="upcoming-movies">
+        <h2>Upcoming Movies</h2>
+        <div class="movie-listing">
+            <!-- Upcoming Movies Cards -->
+            <div class="movie-card">
+                <img src="img3.jpg" alt="Upcoming Movie 1">
+                <h5>Upcoming Movie 1</h5>
+                <p1>Release Date: March 1, 2024</p1>
+                <button onclick="window.open('https://youtu.be/uJMCNJP2ipI?si=CFKs8hzCgY0dvzQk', '_blank')">Watch Trailer</button>
+            </div>
+                
+            </div>
+            <div class="movie-card">
+                <img src="img4.jpg" alt="Upcoming Movie 2">
+                <h5>Upcoming Movie 2</h5>
+                <p1>Release Date: March 15, 2024</p1>
+                <button onclick="window.open('https://youtu.be/10r9ozshGVE?si=LkVS4Ou5cK4CdL8shttps://youtu.be/uJMCNJP2ipI?si=CFKs8hzCgY0dvzQk', '_blank')">Watch Trailer</button>
+                
+            </div>
+            <div class="movie-card">
+                <img src="img5.jpg" alt="Upcoming Movie 3">
+                <h5>Upcoming Movie 3</h5>
+                <p1>Release Date: March 30, 2024</p1>
+                <button onclick="window.open('https://youtu.be/-2O7meAtv-U?si=F8M2M5QjbyOVMxI_', '_blank')">Watch Trailer</button>
+                
+            </div>
+            <!-- Add more Upcoming Movie Cards as needed -->
+        </div>
+    </section>
+
+    
+    <footer>
+        <div class="footer-details">
+            <p>&copy; 2024 Cineplex Movie Theatre. All rights reserved.</p>
+            <p>Address: 456 Film Street, Kandy, Sri Lanka</p>
+            <p>Phone: (+94) 71-2345678</p>
+            <p>Email: info@cineplex.lk</p>
+            <p>Follow us on: <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a></p>
+        </div>
+    </footer>
+    
+</body>
+</html>

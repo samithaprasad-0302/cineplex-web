@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Cineplex Movie Theatre</title>
+    <link rel="stylesheet" href="signup.css">
+    <script src="navigation.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1><img src="png.png"width="90" height="80">Cineplex Movie Theatre</h1>
+    </header>
+
+    <nav>
+        <a href="home.html">Home</a> |
+        <a href="signup.html" class="active">Sign Up</a> <!-- Highlight the active page -->
+    </nav>
+
+    <section class="signup-section">
+        <div class="signup-card">
+            <h2>Sign Up</h2><br><br>
+            <form id="signupForm" action="signup_process.php" method="post">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br>
+
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required><br>              
+
+                <button type="button" onclick="signup()">Sign Up</button><br>
+                <button type="button" onclick="clearForm()">Clear</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-details">
+            <p>&copy; 2024 Cineplex Movie Theatre. All rights reserved.</p>
+            <p>Address: 123 Movie Lane, Cityville</p>
+            <p>Phone: (555) 123-4567</p>
+            <p>Email: info@cineplex.com</p>
+            <p>Follow us on: <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a></p>
+        </div>
+    </footer>
+
+    <script src="signup.js" defer></script> <!-- Reference the JavaScript file -->
+</body>
+</html>

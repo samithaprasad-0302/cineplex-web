@@ -1,0 +1,205 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, p, input, select, button {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: darkslategrey;
+    color: #fff;
+}
+
+/* Header styles */
+header {
+    background-image: url('header-background.jpg'); /* Replace with your header background image */
+    background-color: #33333300;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 1%;
+    text-align: center;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #b6920200;
+    padding: 1em;
+    text-align: center;
+    color: rgb(210, 34, 34);
+    font-size: larger;
+}
+
+nav a {
+    margin: 0 50px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a.active {
+    text-decoration: underline;
+    font-weight: bold;
+    color: red;
+}
+
+/* Special Promotions section styles */
+.promotions-section {
+    padding: 30px;
+    text-align: center;
+}
+
+.promotion-card {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.promotion-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.promotion-card h3 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.promotion-card p {
+    font-size: 16px;
+    margin-top: 10px;
+}/* Reset default margin and padding */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+body, h1, h2, h3, p, input, select, button {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: darkslategrey;
+    background-image: url('promoback.jpg'); /* Replace 'background.jpg' with your image file */
+    color: #fff;
+    background-size:99%;
+    backdrop-filter:blur(3px);
+    
+    
+}
+
+/* Header styles */
+header {
+    background-image: url('header-background.jpg'); /* Replace with your header background image */
+    background-color: #33333300;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 1%;
+    text-align: center;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #b6920200;
+    padding: 1em;
+    text-align: center;
+    color: rgb(210, 34, 34);
+    font-size: larger;
+}
+
+nav a {
+    margin: 0 50px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a.active {
+    text-decoration: underline;
+    font-weight: bold;
+    color: red;
+}
+
+/* Special Promotions section styles */
+.promotions-section {
+    padding: 30px;
+    text-align: center;
+}
+
+.promotion-card {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: rgba(133, 130, 130, 0.563);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    backdrop-filter:blur(5px);
+}
+
+.promotion-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.promotion-card h3 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.promotion-card p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #010101;
+    color: #ffffff;
+    text-align: center;
+    padding: 1em;
+}
+nav a.active{
+    text-decoration:none;
+    font-weight: bold;
+    color: rgb(255, 0, 0);
+}
+h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: larger;
+    color: black;
+}
+p{
+    font-family: 'Poppins', sans-serif;
+    font-size: larger;
+}
+h2{
+    font-family: 'Poppins', sans-serif;
+    font-size:xx-large;
+    
+   
+}
+h4{
+    font-family: 'Poppins', sans-serif;
+    font-size:xx-large;
+    color: black;
+    text-decoration-line: underline;
+    margin-top: auto;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+nav a.active{
+    text-decoration:none;
+    font-weight: bold;
+    color: rgb(255, 0, 0);
+}
